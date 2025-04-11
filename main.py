@@ -115,7 +115,7 @@ def save_schedule(schedule):
 def send_email_alert(subject, message, to_email=None):
     try:
         from_email = "ai.smart.study.bot@gmail.com"
-        password = "xdkizopaxxathrho"
+        password = ""
         if to_email is None:
             to_email = st.session_state.get('email')
 
@@ -268,7 +268,7 @@ def show_chatbot():
     st.subheader("🤖 DSA Doubt-Resolving Chatbot (Gemini)")
 
     # Load your Gemini API Key
-    genai.configure(api_key="AIzaSyBrNii9tvFNkRL3LEvQCBlS_jV2TA__VZc")
+    genai.configure(api_key="")
 
     user_question = st.text_area("💬 Ask your DSA doubt (e.g., What is memoization in DP?)")
 
