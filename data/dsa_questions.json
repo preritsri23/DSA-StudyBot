@@ -1,0 +1,301 @@
+{
+    "Arrays": [
+      {
+        "question": "What is the time complexity of accessing an element in an array by index?",
+        "options": ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+        "answer": "O(1)",
+        "hint": "Think about how arrays use continuous memory.",
+        "explanation": "Array elements can be accessed in O(1) time because their memory addresses can be calculated directly using the index."
+      },
+      {
+        "question": "Which algorithm is best for finding the maximum subarray sum?",
+        "options": ["Kadane's Algorithm", "Binary Search", "Merge Sort", "DFS"],
+        "answer": "Kadane's Algorithm",
+        "hint": "It's a dynamic programming technique used on arrays.",
+        "explanation": "Kadane's Algorithm efficiently finds the subarray with the maximum sum in O(n) time by tracking the maximum subarray ending at each index."
+      },
+      {
+        "question": "What is the space complexity of the Merge Sort algorithm?",
+        "options": ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+        "answer": "O(n)",
+        "hint": "It uses additional memory to merge arrays.",
+        "explanation": "Merge Sort uses O(n) additional space for temporary arrays during the merge process."
+      },
+      {
+        "question": "Which sorting algorithm is stable?",
+        "options": ["Quick Sort", "Merge Sort", "Heap Sort", "Selection Sort"],
+        "answer": "Merge Sort",
+        "hint": "It maintains the order of equal elements.",
+        "explanation": "Merge Sort is stable as it doesn’t change the order of equal elements during merging."
+      },
+      {
+        "question": "How do you remove duplicates from a sorted array in-place?",
+        "options": ["Two-pointer approach", "Stack", "Binary Search", "DFS"],
+        "answer": "Two-pointer approach",
+        "hint": "Use one pointer to write and one to read.",
+        "explanation": "The two-pointer technique allows in-place duplicate removal by overwriting repeated values while iterating."
+      }
+    ],
+    "Dynamic Programming": [
+      {
+        "question": "Which of the following problems is best solved using DP?",
+        "options": ["0/1 Knapsack", "Binary Search", "Heap Sort", "BFS"],
+        "answer": "0/1 Knapsack",
+        "hint": "Look for overlapping subproblems and optimal substructure.",
+        "explanation": "DP is ideal for 0/1 Knapsack because it solves overlapping subproblems and stores intermediate results."
+      },
+      {
+        "question": "What is the time complexity of calculating Fibonacci using memoization?",
+        "options": ["O(n)", "O(n^2)", "O(log n)", "O(n log n)"],
+        "answer": "O(n)",
+        "hint": "Memoization avoids repeated calculations.",
+        "explanation": "Memoization stores previously calculated Fibonacci values, reducing time complexity from exponential to linear."
+      },
+      {
+        "question": "What does overlapping subproblems mean?",
+        "options": ["Same subproblems solved multiple times", "No subproblems", "Problems are dependent", "Parallel problems"],
+        "answer": "Same subproblems solved multiple times",
+        "hint": "Occurs when recursion solves the same input repeatedly.",
+        "explanation": "Overlapping subproblems mean the same function is called repeatedly with the same parameters in a recursive approach."
+      },
+      {
+        "question": "Which approach is used in Tabulation?",
+        "options": ["Bottom-up", "Top-down", "Recursion", "Backtracking"],
+        "answer": "Bottom-up",
+        "hint": "It builds the solution iteratively.",
+        "explanation": "Tabulation fills up a table by solving all subproblems from the base case upwards in a bottom-up manner."
+      },
+      {
+        "question": "LIS problem can be solved in O(n log n) using:",
+        "options": ["Binary Search + DP", "DFS", "Greedy", "Memoization only"],
+        "answer": "Binary Search + DP",
+        "hint": "Combine dynamic programming with a smart search.",
+        "explanation": "Using DP with binary search helps find the smallest tail values of increasing subsequences to reduce time complexity."
+      }
+    ],
+    "Graph": [
+      {
+        "question": "Which algorithm is used to detect cycle in an undirected graph?",
+        "options": ["DFS", "BFS", "Union-Find", "Dijkstra"],
+        "answer": "Union-Find",
+        "hint": "Think disjoint sets.",
+        "explanation": "Union-Find helps detect cycles by checking if two vertices are already connected in the same set."
+      },
+      {
+        "question": "Which algorithm finds the shortest path in a weighted graph?",
+        "options": ["Dijkstra", "DFS", "Topological Sort", "Prim"],
+        "answer": "Dijkstra",
+        "hint": "It uses a priority queue.",
+        "explanation": "Dijkstra's algorithm finds the shortest path from a source to all vertices in graphs with non-negative weights."
+      },
+      {
+        "question": "Which traversal uses a queue?",
+        "options": ["BFS", "DFS", "Inorder", "Postorder"],
+        "answer": "BFS",
+        "hint": "Think level-order traversal.",
+        "explanation": "Breadth-First Search uses a queue to visit all vertices level by level."
+      },
+      {
+        "question": "Topological sort is applicable to:",
+        "options": ["Directed Acyclic Graph", "Tree", "Undirected Graph", "Any Graph"],
+        "answer": "Directed Acyclic Graph",
+        "hint": "Think dependencies.",
+        "explanation": "Topological sort is only valid for DAGs where tasks must be ordered respecting dependencies."
+      },
+      {
+        "question": "What is the time complexity of DFS?",
+        "options": ["O(V + E)", "O(V^2)", "O(E)", "O(V log V)"],
+        "answer": "O(V + E)",
+        "hint": "Each node and edge is visited once.",
+        "explanation": "DFS visits each node and edge once, resulting in O(V + E) time complexity."
+      }
+    ],
+    "Linked List": [
+    {
+      "question": "What is the time complexity to insert a node at the beginning of a singly linked list?",
+      "options": ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+      "answer": "O(1)",
+      "hint": "You're just updating the head pointer.",
+      "explanation": "Inserting at the beginning only requires changing one pointer, which takes constant time."
+    },
+    {
+      "question": "Which data structure is used for implementing adjacency lists in graphs?",
+      "options": ["Array", "Stack", "Linked List", "Tree"],
+      "answer": "Linked List",
+      "hint": "Think about dynamic connections.",
+      "explanation": "Linked lists are ideal for storing adjacent nodes as they allow dynamic memory allocation and efficient insertion."
+    },
+    {
+      "question": "What is the advantage of a doubly linked list over a singly linked list?",
+      "options": ["Can be traversed in both directions", "Less memory", "Faster insertion", "Simpler code"],
+      "answer": "Can be traversed in both directions",
+      "hint": "Two pointers are involved in each node.",
+      "explanation": "A doubly linked list contains pointers to both the next and previous nodes, allowing traversal in both directions."
+    },
+    {
+      "question": "How can you detect a cycle in a linked list?",
+      "options": ["Floyd’s Cycle Detection", "DFS", "Binary Search", "Inorder Traversal"],
+      "answer": "Floyd’s Cycle Detection",
+      "hint": "It uses slow and fast pointers.",
+      "explanation": "Floyd’s algorithm uses two pointers moving at different speeds. If there’s a loop, they’ll eventually meet."
+    },
+    {
+      "question": "What happens if you try to access a deleted node?",
+      "options": ["Undefined behavior", "Returns null", "Throws an exception", "Returns 0"],
+      "answer": "Undefined behavior",
+      "hint": "Memory is no longer valid.",
+      "explanation": "Accessing a deleted node leads to undefined behavior as the memory could be reused or invalid."
+    }
+  ],
+  "Stack": [
+    {
+      "question": "What is the time complexity of push operation in a stack implemented using an array?",
+      "options": ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+      "answer": "O(1)",
+      "hint": "It adds at the top.",
+      "explanation": "Push operation in a stack adds the element to the top and takes constant time."
+    },
+    {
+      "question": "Stacks follow which order?",
+      "options": ["LIFO", "FIFO", "Random", "Sorted"],
+      "answer": "LIFO",
+      "hint": "Last comes out first.",
+      "explanation": "Stack follows the Last In First Out order, meaning the most recent item is removed first."
+    },
+    {
+      "question": "Which algorithm uses stack for expression evaluation?",
+      "options": ["Postfix Evaluation", "Binary Search", "Prim's", "Kruskal's"],
+      "answer": "Postfix Evaluation",
+      "hint": "Reverse Polish Notation.",
+      "explanation": "Postfix (or Reverse Polish) expressions are evaluated using a stack by pushing operands and applying operators."
+    },
+    {
+      "question": "Which function is used to check if stack is empty?",
+      "options": ["isEmpty()", "peek()", "pop()", "top()"],
+      "answer": "isEmpty()",
+      "hint": "Used for safety before popping.",
+      "explanation": "isEmpty() checks whether the stack has any elements before operations like pop or peek."
+    },
+    {
+      "question": "What is the auxiliary space complexity for recursion?",
+      "options": ["O(n)", "O(1)", "O(n^2)", "O(log n)"],
+      "answer": "O(n)",
+      "hint": "Function calls stack up.",
+      "explanation": "Each recursive call adds a frame to the call stack, making the auxiliary space O(n) for n calls."
+    }
+  ],
+  "Queue": [
+    {
+      "question": "Queues follow which order?",
+      "options": ["FIFO", "LIFO", "Random", "Stacked"],
+      "answer": "FIFO",
+      "hint": "Think of a line of people.",
+      "explanation": "Queue follows First In First Out where the earliest inserted element is removed first."
+    },
+    {
+      "question": "Which queue allows insertion and deletion from both ends?",
+      "options": ["Deque", "Priority Queue", "Circular Queue", "Simple Queue"],
+      "answer": "Deque",
+      "hint": "Double-ended queue.",
+      "explanation": "Deque supports insertion and deletion from both front and rear, unlike standard queues."
+    },
+    {
+      "question": "Circular queues prevent:",
+      "options": ["Wastage of space", "LIFO behavior", "Memory leaks", "Duplicate data"],
+      "answer": "Wastage of space",
+      "hint": "Tail can wrap around.",
+      "explanation": "Circular queues wrap around the end, making full use of available space and preventing overflow due to unutilized space."
+    },
+    {
+      "question": "Which data structure is used for level order traversal?",
+      "options": ["Queue", "Stack", "Linked List", "Array"],
+      "answer": "Queue",
+      "hint": "Used in BFS.",
+      "explanation": "Level order traversal uses a queue to visit nodes layer by layer, starting from the root."
+    },
+    {
+      "question": "In a priority queue, elements are served based on:",
+      "options": ["Priority", "Time", "Index", "Randomness"],
+      "answer": "Priority",
+      "hint": "Important elements come first.",
+      "explanation": "In a priority queue, each element has a priority and the one with highest priority is processed first."
+    }
+  ],
+  "Trees": [
+    {
+      "question": "What is the height of a tree with only a root node?",
+      "options": ["0", "1", "-1", "Depends on type"],
+      "answer": "0",
+      "hint": "Height is number of edges.",
+      "explanation": "A single node tree has height 0 because there are no edges from root to children."
+    },
+    {
+      "question": "Which traversal gives sorted order for BST?",
+      "options": ["Inorder", "Preorder", "Postorder", "Level order"],
+      "answer": "Inorder",
+      "hint": "Left → Root → Right",
+      "explanation": "Inorder traversal of a Binary Search Tree visits nodes in sorted ascending order."
+    },
+    {
+      "question": "What is the maximum number of nodes in a binary tree of height h?",
+      "options": ["2^(h+1) - 1", "2^h", "h", "log h"],
+      "answer": "2^(h+1) - 1",
+      "hint": "It's a complete binary tree.",
+      "explanation": "In a complete binary tree, each level doubles the number of nodes. Total is 2^(h+1) - 1."
+    },
+    {
+      "question": "What is the time complexity of finding height of binary tree?",
+      "options": ["O(n)", "O(log n)", "O(n^2)", "O(1)"],
+      "answer": "O(n)",
+      "hint": "You visit each node once.",
+      "explanation": "To calculate height, we recursively visit all nodes, so time is linear in number of nodes."
+    },
+    {
+      "question": "Which traversal method is best for expression trees?",
+      "options": ["Postorder", "Preorder", "Inorder", "Level order"],
+      "answer": "Postorder",
+      "hint": "Evaluate children before parent.",
+      "explanation": "Postorder is used to evaluate expression trees where children nodes (operands) are processed before the operator."
+    }
+  ],
+  "Binary Search Tree": [
+    {
+      "question": "In BST, the left child is always:",
+      "options": ["Less than root", "Greater than root", "Equal to root", "Random"],
+      "answer": "Less than root",
+      "hint": "Smaller elements go to left.",
+      "explanation": "By BST property, left child contains values smaller than the current node (root)."
+    },
+    {
+      "question": "What is the time complexity for searching in balanced BST?",
+      "options": ["O(log n)", "O(n)", "O(1)", "O(n log n)"],
+      "answer": "O(log n)",
+      "hint": "Each step cuts the tree in half.",
+      "explanation": "In a balanced BST, height is log n, and each search halves the search space like binary search."
+    },
+    {
+      "question": "Which traversal is used to print values in ascending order in BST?",
+      "options": ["Inorder", "Preorder", "Postorder", "Level order"],
+      "answer": "Inorder",
+      "hint": "Left → Root → Right gives sorted output.",
+      "explanation": "Inorder traversal visits left subtree, node, and right subtree, which for BST results in sorted order."
+    },
+    {
+      "question": "What is the worst-case time complexity in an unbalanced BST?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n^2)"],
+      "answer": "O(n)",
+      "hint": "Tree could look like a linked list.",
+      "explanation": "If BST is skewed (like a linked list), searching will require checking all nodes, hence O(n)."
+    },
+    {
+      "question": "Which operation is NOT commonly supported in BST?",
+      "options": ["Random Access", "Insertion", "Deletion", "Search"],
+      "answer": "Random Access",
+      "hint": "There's no index in BST.",
+      "explanation": "BST does not support random access by index like arrays. You must traverse to find elements."
+    }
+  ]
+
+    
+  }
+  

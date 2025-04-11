@@ -1,0 +1,47 @@
+{
+  "Arrays": [
+    {
+      "score": 1,
+      "total": 5,
+      "date": "2025-04-09"
+    },
+    {
+      "score": 1,
+      "total": 5,
+      "date": "2025-04-09"
+    },
+    {
+      "score": 2,
+      "date": "2025-04-09"
+    },
+    {
+      "score": 1,
+      "date": "2025-04-10"
+    }
+  ],
+  "Dynamic Programming": [
+    {
+      "score": 1,
+      "total": 5,
+      "date": "2025-04-09"
+    }
+  ],
+  "Graph": [
+    {
+      "score": 0,
+      "total": 5,
+      "date": "2025-04-09"
+    }
+  ],
+  "Linked List": [],
+  "Stack": [
+    {
+      "score": 4,
+      "total": 5,
+      "date": "2025-04-09"
+    }
+  ],
+  "Queue": [],
+  "Trees": [],
+  "Binary Search Tree": []
+}
