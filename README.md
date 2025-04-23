@@ -28,5 +28,5 @@ A smart, interactive **Data Structures & Algorithms (DSA)** learning assistant b
 git clone https://github.com/preritsri23/DSA-StudyBot.git
 cd DSA-StudyBot
 pip install -r requirements.txt
-streamlit run app.py
+streamlit run main.py
 
