@@ -314,8 +314,18 @@ def show_progress():
         accuracy = []
         for d in dates:
             if d in progress and t in progress[d]:
-                correct = progress[d][t]["correct"]
-                total = progress[d][t]["total"]
+                entry = progress[d][t]
+
+                # ✅ Safe handling of dict/int/malformed cases
+                if isinstance(entry, dict) and "correct" in entry and "total" in entry:
+                    correct = entry["correct"]
+                    total = entry["total"]
+                elif isinstance(entry, int):
+                    correct = entry
+                    total = entry  # assume total = correct if only int stored
+                else:
+                    correct, total = 0, 0
+
                 acc = round((correct / total) * 100, 2) if total > 0 else 0
                 accuracy.append(acc)
             else:
@@ -351,10 +361,10 @@ def show_progress():
                     c = entry["correct"]
                     tot = entry["total"]
                 elif isinstance(entry, int):
-                     c = entry
-                     tot = entry  # assume full score if total isn't stored
+                    c = entry
+                    tot = entry
                 else:
-                     continue  # skip malformed entries
+                    continue  # skip malformed entries
 
                 pct = round((c / tot) * 100, 2) if tot > 0 else 0
                 summary_data.append({"Topic": t, "Date": d, "Accuracy (%)": pct})
@@ -362,6 +372,7 @@ def show_progress():
 
     if summary_data:
         st.dataframe(summary_data)
+
 
 
 def show_scheduler():
